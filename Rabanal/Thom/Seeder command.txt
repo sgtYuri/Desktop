@@ -1,0 +1,7 @@
+php artisan amke:seeder UserSeeder
+
+composer dump-autoload
+
+php artisan db:seed
+
+php artisan make:controler

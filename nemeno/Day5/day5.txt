@@ -1,0 +1,86 @@
+laravel relationship
+app.diagram.net
+draw.io
+https://learninglaravel.net/cheatsheet/#artisan
+
+env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=army_2_db
+DB_USERNAME=root
+DB_PASSWORD=
+
+php artisan config:clear
+php artisan migrate
+php artisan migrate:fresh
+
+create database
+in vscode go to .env
+
+$table->id();
+            $table->string('name');
+            $table->string('user_name');
+            $table->string('password');
+            $table->enum('account_type',[
+                'Admin' ,'Staff' .'Teacher'
+            ]);
+            $table->enum('teacher',[
+                'grade1' ,'grade2' .'grade3'
+            ]);
+            $table->timestamps();
+to create migration
+every table one migration file
+php artisan make:migration create_{teachers}_table
+php artisan make:migration create_students_table
+php artisan make:migration create_grades_table
+
+
+
+1.go to phpadmin
+2.edit database environment in .env
+3..php artisann config:clear
+
+
+
+    $table->string('title');
+            $table->unsignedBigInteger('authors_id')->index();
+            $table->unsignedBigInteger('publishers_id')->index();
+            $table->unsignedBigInteger('categories_id')->index();
+            $table->unsignedBigInteger('subcategories_id')->index();
+            $table->timestamps();
+
+
+
+
+
+
+every have relationship
+unsignedbigInteger
+
+
+
+ $table->id();
+            $table->string('title');
+            $table->string('employee_id');
+            $table->blob('photo')->nullable();;
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('middle_name');
+            $table->date('birthday');
+            $table->enum('gender',[
+                'Male' , 'Female'
+            ]);
+            $table->unsignedBigInteger('department_id')->index();
+            $table->unsignedBigInteger('sss')->index();
+            $table->unsignedBigInteger('philhealth')->index();
+            $table->unsignedBigInteger('pagibig')->index();
+            $table->unsignedBigInteger('tax')->index();
+          
+
+            $table->timestamps();
+        
+            $table->foreign('department_id')->references('id')->on('department');
+            $table->foreign('sss')->references('id')->on('sss');
+            $table->foreign('philhealth')->references('id')->on('philhealth');
+            $table->foreign('pagibig')->references('id')->on('pagibig');

@@ -1,0 +1,57 @@
+Controller
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Masterlist;
+class MasterlistController extends Controller
+{
+    public function simple_query()
+    {
+        //get all data
+        $data=Masterlist::all();
+        return dd($data);
+    }
+    public function select()
+    {
+        //select specefic column data
+        $data=Masterlist::select('name', 'age')->get();
+        return dd($data);
+    }
+    public function find()
+    {
+        //get all data by its ID
+        //pass the ID inside the find
+        $data=Masterlist::find(4);
+
+        return dd($data);
+    }
+
+
+}
+
+routes
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+
+Route::get('/1',[
+    App\Http\Controllers\MasterlistController::class,
+    'simple_query'
+
+]);
+
+Route::get('/2',[
+    App\Http\Controllers\MasterlistController::class,
+    'select'
+    
+]);
+
+Route::get('/3',[
+    App\Http\Controllers\MasterlistController::class,
+    'find'
+
+]);
+

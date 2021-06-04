@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Personel;
+class CreateController extends Controller
+{
+    //declare variable
+    protected $request;
+     public function __construct(Request $request)
+     {
+         $this->request = $request;
+     }
+    public function index()
+    {
+        return view ('create');
+    }
+    public function save()
+    {
+     dd(
+         $this->request->except('_token')
+     );
+    }
+}
+
+1.app
+  -controller
+models
+php artisan make:model Personel
+  -example(Personel)
+2.database
+php artisan make:migration create_personel_table
+3.views
+4.routes
+

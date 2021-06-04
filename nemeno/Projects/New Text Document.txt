@@ -1,0 +1,67 @@
+$ git init
+git remote add origin https://github.com/army-isdt-batch-2/nemo.git
+$ git remote -v
+$ git commit -m "first release"
+$ git add .
+git --global username ""
+ 
+
+
+
+git
+stage
+message na binago
+check
+pull push-push
+git config --global credential.github.com.useHttpPath true
+https://dev.to/configcat/lazy-man-s-guide-multiple-github-https-
+accounts-on-windows-2mad#
+:~:text=Go%20to%20Windows%20Credential%20Manager,
+credentials%20from%20the%20credential%20manager.
+
+DB
+table(migration)
+transaction
+-create-
+-update
+-delete
+-retrieve
+
+
+create db
+.env
+b4 seed make table
+migration file
+php artisan make:seeder DogsSeeder
+migrate b4 seeder
+$ php artisan db:seed --class=DogsSeeder
+-model
+$ php artisan make:model Personel
+
+
+class Personel extends Model
+{
+    use HasFactory;
+    //table name
+    protected $table = "personel";
+    //fields
+     protected $fillable = [
+
+       'first_name',
+       'last_name',
+       'middle_name',
+       'age',
+       'gender',
+       'birthday',
+       'contact',
+       'address',
+       'created_at',
+       'updated_at',
+       'deleted_at'
+
+
+
+     ];
+}
+
+

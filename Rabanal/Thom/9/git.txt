@@ -1,0 +1,21 @@
+git clone URL
+
+... Pull
+
+Coding
+	Git tab
+	for changes click " + "
+	Put Commit message
+	click check icon
+	... pull\push -> push
+
+
+//this is for web.php
+foreach (glob(__DIR__."/modules/*.php") as $filename) {
+	inlcued $filename;
+}
+
+git branch name
+git checkout name
+git commit -m"
+git push --set-upstream 

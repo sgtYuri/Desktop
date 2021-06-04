@@ -1,0 +1,26 @@
+create a controller
+
+middleware
+
+route - Route::get('/home', []);
+teminal
+controller- php artisan make:controller HomeController
+
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+/**Home, */
+Route::get('/home', [
+    App\Http\Controllers\HomeController::class,
+    'index'
+]);
+
+
+view- 

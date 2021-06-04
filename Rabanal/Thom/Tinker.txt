@@ -1,0 +1,4 @@
+DB::table('proj')->get();
+Project::find(1)
+Project::whereName('a')
+->get();

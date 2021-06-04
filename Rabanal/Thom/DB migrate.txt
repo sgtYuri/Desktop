@@ -1,0 +1,4 @@
+//create migration  file php artisan make:migration filename
+
+
+//migrate database php artisan migrate

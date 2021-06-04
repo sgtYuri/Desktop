@@ -1,0 +1,45 @@
+
+installation and configuration
+
+needs:
+	COMPOSER 
+	XAMPP
+	VISUAL STUDIO
+
+create a project 
+ 	1.composer create-project
+	2. composer install
+	3. php artisan serve
+
+App structure.
+
+*rqst life cycle of laravel
+	route->controller->view.
+Routes
+	*create route
+Http
+	*create controller
+resources
+	*view
+
+
+4. database,
+	1.env
+	2.php artisan config:clerar
+	3.migrate
+
+how to create migration?
+
+ 	php artisan make:migration create_(name of table)_table
+
+create seeder
+
+	php artisan make:seeder NameSeeder
+
+
+
+Log in flow on CRUd:
+
+
+
+	

@@ -1,0 +1,4 @@
+SELECT info.*, images.path
+FROM info
+INNER JOIN images ON
+info.id = images.product id LIMIT 0, 25

@@ -1,0 +1,10 @@
+first to do:
+make folder
+-in -cmd- type
+cd desktop foldername
+route
+-make controller
+composer create-project --prefer-dist 
+laravel/laravel installation
+
+
