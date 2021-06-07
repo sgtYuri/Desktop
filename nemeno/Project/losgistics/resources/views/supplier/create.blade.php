@@ -11,11 +11,11 @@
                         <h4>Create Supplier</h4>
                     </div>
                     <div class="col-12">
-                         {{-- Department Form--}}
+                         {{-- Supplier Form--}}
                          <form class =" row g-3 " action="{{ URL::route('supplier.create.save') }}" method="post">
                             @csrf
 
-                            {{-- Department Input Field --}}
+                            {{-- Supplier Input Field --}}
                             <div class="col-md-12">
                                 <label for="supplier" class="form-label">Name</label>
                                 <input type="text" id="supplier" class="form-control" name="name" value="{{ old('name') }}" required>

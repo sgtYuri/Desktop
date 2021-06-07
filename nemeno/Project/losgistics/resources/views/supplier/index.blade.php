@@ -13,7 +13,7 @@
                         </h4>
                     </div>
                     <div class="col-2 text-end"> 
-                        <a href="/department/create" class="btn btn-dark pull-right">Create</a>
+                        <a href="/supplier/create" class="btn btn-dark pull-right">Create</a>
                     </div> 
                     <div class="col-12">
                         <hr>    

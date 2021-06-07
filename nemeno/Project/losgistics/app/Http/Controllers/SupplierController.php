@@ -31,7 +31,7 @@ class SuppliertController extends Controller
 
 
     /** 
-     * Create New Deartment Form
+     * Create New Supplier Form
     */
     public function create()
     {
