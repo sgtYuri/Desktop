@@ -5,20 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Deliveries extends Model
+class Message extends Model
 {
     use HasFactory;
         
     //table name
-    protected $table = "deliveries";
+    protected $table = "messages";
     //fields
      protected $fillable = [
 
-    'distribution_id',
-    'transportation_id',
-    'date_distributed',
-    'status',
+    'user_id',
+    'message',
+    'created_at',
+    'updated_at'
+   
   
      ];        
 
 }
+

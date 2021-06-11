@@ -1,55 +1,47 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Logistics</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a href="/supplier" class=" text-white nav-link  @if($active=='supplier') active @endif">
+            <a href="/supplier" class=" text-black nav-link  @if($active=='supplier') active @endif">
+            Supplier </a>
+          </li>
+        <li class="nav-item">
+          <a href="/storage" class=" text-black nav-link  @if($active=='storage') active @endif">
+            Storage </a>
+        </li>
+        <li class="nav-item">
+          <a href="/assets" class=" text-black nav-link  @if($active=='assets') active @endif">
+            Assets </a>
+        </li>
+        <li class="nav-item">
+          <a href="/distribution" class=" text-black nav-link  @if($active=='distribution') active @endif">
+            Distribution </a>
+        </li>
+          <li class="nav-item">
+            <a href="/transportation" class=" text-black nav-link  @if($active=='transportation') active @endif">
+              Transportation </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Storgage</a>
-          </li> <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Assets</a>
+            <a href="/delivery" class=" text-black nav-link  @if($active=='delivery') active @endif">
+              Dileveries </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Distribution</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Transportation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Deliveries</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Returns</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Supplier</a></li>
-              <li><a class="dropdown-item" href="#">Storgage</a></li>
-                <li><a class="dropdown-item" href="#">Assets</a></li>
-                <li><a class="dropdown-item" href="#">Distribution</a></li>
-                <li><a class="dropdown-item" href="#">Transportation</a></li>
-                <li><a class="dropdown-item" href="#">Deliveries</a></li>
-                <li><a class="dropdown-item" href="#">Returns</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a href="/return" class=" text-black nav-link  @if($active=='return') active @endif">
+              Returns </a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <nav>
+        <a href="/app.logout" class=" text-white d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://variety.com/wp-content/uploads/2014/11/stand-by-me-doraemon.jpg?w=681&h=383&crop=1" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>Yhuri</strong>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+          <li><a class="dropdown-item" href="{{ URL::route('app.logout') }}">Sign out</a></li>
+      </ul>
+    </a>
       </div>
-    </div>
   </nav>

@@ -30,6 +30,7 @@
                 <label  class="form-label">Password</label>
                 <input type="password" class="form-control" name="password">
             </div>
+            <h5>Not Registered</h5>
             <a href="{{ URL::route('app.registration') }}">Create Account</a>
             <br>
             <br>
